@@ -5,6 +5,9 @@ const config: StorybookConfig = {
     "../src/**/*.mdx",
     "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"
   ],
+  "core": {
+    "disableTelemetry": true,
+  },
   "addons": [
     "@storybook/addon-essentials",
     "@storybook/addon-onboarding",
@@ -14,6 +17,8 @@ const config: StorybookConfig = {
   "framework": {
     "name": "@storybook/angular",
     "options": {}
-  }
+  },
+  
+
 };
 export default config;
